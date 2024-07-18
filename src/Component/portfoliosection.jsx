@@ -338,7 +338,7 @@ import OwlCarousel from 'react-owl-carousel2';
 import portfolio1 from '../../src/Assets/portfolio1.png';
 import portfolio2 from '../../src/Assets/portfolio2.png';
 import portfolio3 from '../../src/Assets/portfolio3.png';
-import portfolio4 from '../../src/Assets/portfolio1.png';
+import portfolio4 from '../../src/Assets/portfolio1.png'; // Make sure this path is correct
 
 const portfolios = {
     Animation: [
@@ -391,6 +391,8 @@ const PortfolioSection = () => {
             loop: true,
             nav: false,
             dots: true,
+            autoplay: true, // Auto slides
+            autoplayTimeout: 3000, // Slide interval (milliseconds)
             margin: 20, // Adds space between items
             responsive: {
                 0: {
@@ -406,7 +408,7 @@ const PortfolioSection = () => {
             <OwlCarousel options={options}>
                 {portfolios[activeTab].map(project => (
                     <div className="item" key={project.id}>
-                        <div className="card" style={{ border: 'rgb(244, 248, 254)',backgroundColor: '#f4f8fe', padding: '20px', textAlign: 'center' }}>
+                        <div className="card" style={{ border: 'rgb(244, 248, 254)', backgroundColor: '#f4f8fe', padding: '20px', textAlign: 'center' }}>
                             <img
                                 src={project.src}
                                 alt={project.alt}
