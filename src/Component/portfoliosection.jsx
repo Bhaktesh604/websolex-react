@@ -431,7 +431,7 @@ const PortfolioSection = () => {
                     <div className="col-lg-12 text-center">
                         <div className="section_title portfolio_title text_center mt-3 wow fadeInDown mb-4">
                             <div className="section_sub_title uppercase mb-3">
-                                <h6>PORTFOLIO</h6>
+                                <h6>BHAKTESH</h6>
                             </div>
                             <div className="section_main_title">
                                 <h1>Our Latest Works For Your Business</h1>
